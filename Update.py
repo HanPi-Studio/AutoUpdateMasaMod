@@ -1,7 +1,7 @@
 import requests
 import os
 from bs4 import BeautifulSoup
-mods = ['itemscroller','litematica','malilib','minihud','tweakeroo']
+mods = ['itemscroller','litematica','malilib','minihud','tweakeroo','tellme']
 for i in mods:
     os.system("erase " + i + "*")
 url = "https://masa.dy.fi/mcmods/client_mods/?mcver=1.15.2"
@@ -16,3 +16,5 @@ for urls in link_list:
     print(name)
     with open(name, "wb") as f:
         f.write(d.content)
+
+os.system("erase " + "tellme-forge" + "*")
